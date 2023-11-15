@@ -1,65 +1,8 @@
 # Default ignored files
-# Ignore compiled files
-*.class
-*.war
-*.ear
-*.jar
-
-# Ignore log and temporary files
-*.log
-*.log.*
-*.tmp
-*.swp
-
-# Ignore OS generated files
-.DS_Store
-Thumbs.db
-
-# Ignore Maven specific files
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-
-# Ignore Eclipse files
-.settings/
-*.project
-*.classpath
-*.pydevproject
-
-# Ignore IntelliJ IDEA files
-.idea/
-*.iml
-*.iws
-*.ipr
-
-# Ignore NetBeans files
-nbproject/
-
-# Ignore Visual Studio Code files
-.vscode/
-
-# Ignore Node.js files
-node_modules/
-
-# Ignore compiled Python files
-__pycache__/
-*.pyc
-*.pyo
-
-# Ignore compiled Java files
-*.class
-
-# Ignore Jekyll build directory
-_site/
-
-# Ignore macOS specific files
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Ignore editor backup files
-*~
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
