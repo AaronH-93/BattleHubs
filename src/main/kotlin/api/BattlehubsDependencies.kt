@@ -11,8 +11,8 @@ class BattlehubsDependencies(val context: DSLContext, val clock: Clock, val conf
 //    private val services: Nothing = TODO() // BattlehubsServices(BattlehubsRepositories, clock, config)
 //    private val routes: Nothing = TODO() // BattlehubsRoutes(services, events)
 //    private val api: Nothing = TODO() // routingHttpHandler(routes)
-//
 //    val httpApi: Nothing = TODO() // BattlehubsHttpApi(api, routes)
+
     fun onStart() {
         val flyway = Flyway.configure()
             .driver("org.postgresql.Driver")
