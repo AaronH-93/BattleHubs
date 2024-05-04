@@ -16,7 +16,7 @@ class BattlehubsDependencies(val context: DSLContext, val clock: Clock, val conf
     fun onStart() {
         val flyway = Flyway.configure()
             .driver("org.postgresql.Driver")
-            .dataSource("jdbc:postgresql://localhost:5432/battlehubs", "postgres", "password")
+            .dataSource("jdbc:postgresql://localhost:5432/postgres", "postgres", "password")
             .load()
 
         flyway.migrate()

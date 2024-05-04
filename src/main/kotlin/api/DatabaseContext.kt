@@ -16,7 +16,7 @@ object DatabaseContext {
             val properties = Properties()
             properties.setProperty("ApplicationName", "transactions")
             //TODO: Set these properly
-            jdbcUrl = "jdbc:postgresql://0.0.0.0:5432/battlehubs"
+            jdbcUrl = "jdbc:postgresql://0.0.0.0:5432/postgres"
             username = "postgres"
             password = "password"
             dataSourceProperties = properties

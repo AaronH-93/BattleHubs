@@ -16,29 +16,28 @@ repositories {
 
 flyway {
     driver = "org.postgresql.Driver"
-    url = "jdbc:postgresql://0.0.0.0:5432/battlehubs"
+    url = "jdbc:postgresql://0.0.0.0:5432/postgres"
     user = "postgres"
     password = "password"
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation(platform("org.http4k:http4k-bom:5.9.0.0"))
-    implementation("org.http4k:http4k-core")
-    implementation("org.http4k:http4k-server-undertow")
-    implementation("org.http4k:http4k-client-apache")
+    runtimeOnly("org.http4k:http4k-bom:5.18.2.0")
+    implementation("org.http4k:http4k-core:5.18.2.0")
+    runtimeOnly("org.http4k:http4k-server-undertow:5.18.2.0")
+    implementation("org.http4k:http4k-client-apache:5.18.2.0")
     implementation("com.zaxxer:HikariCP:2.7.8")
     implementation("com.natpryce:konfig:1.6.10.0")
     implementation("org.flywaydb:flyway-core:9.22.3")
     implementation("org.flywaydb:flyway-mysql:9.22.3")
-    implementation("org.postgresql:postgresql:42.5.1")
+    implementation("org.postgresql:postgresql:42.7.3")
     implementation("dev.forkhandles:result4k:2.10.1.0")
 
     implementation("org.jooq:jooq:3.18.7")
     implementation("org.jooq:jooq-meta:3.18.7")
     implementation("org.jooq:jooq-codegen:3.18.7")
 
-    jooqGenerator 'org.postgresql:postgresql:42.5.1'
+    jooqGenerator 'org.postgresql:postgresql:42.7.3'
 
     testImplementation("io.mockk:mockk:1.4.1")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
@@ -55,7 +54,7 @@ jooq {
                 logging = Logging.WARN
                 jdbc {
                     driver = 'org.postgresql.Driver'
-                    url = 'jdbc:postgresql://localhost:5432/battlehubs'
+                    url = 'jdbc:postgresql://localhost:5432/postgres'
                     user = 'postgres'
                     password = 'password'
                 }

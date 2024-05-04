@@ -1,1 +1,1 @@
-create schema if not exists battlehubs;
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
